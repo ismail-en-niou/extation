@@ -1,0 +1,27 @@
+{
+  "name": "BeFree Test",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "BeFree Extension By MG Studio",
+  "action": {
+    "default_icon": "icon/icon.png",
+    "default_popup": "/page/login/login.html"
+  },
+  "icons": {
+    "16": "icon/icon.png",
+    "48": "icon/icon.png",
+    "128": "icon/icon.png"
+  },
+  "background":{
+    "service_worker": "/script/background.js"
+  },
+  "permissions": ["storage","identity","activeTab","tabs","windows","notifications","scripting"],
+
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["/script/background.js"],
+      "run_at": "document_end"
+    }]
+}

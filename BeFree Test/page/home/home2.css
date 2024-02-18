@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --bg-color: #292C3A;
+    /* li ghaytbdlo */
+    --button-color: rgba(41, 44, 58, 1);
+    --color-normal: rgb(18, 212, 255);
+    --Fill:rgba(18, 212, 255, 1);
+    --home-bg :#121525;
+    --light-bg:#292C3A; 
+    --back_sh:#191D32;
+    --iso:#11A2C2;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#292C3A;
+}
+.container {
+    width: 335px;
+    height: 500px;
+    background-color: var(--home-bg);
+    border-radius: 18px;
+    position: relative;
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0.3rem;
+    margin-top: -.2rem;
+}
+.left-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center
+}
+.left-logo svg {
+    filter: drop-shadow(10px 10px 20px rgba(169, 170, 170, 0.618));
+    cursor: pointer;
+    margin-left: -2px;
+}
+.right-logo svg:hover , .right-logo svg  {
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+}
+.right-logo svg {
+    width: 60px;
+    margin-left: -2.38rem;
+    border-radius: 100%;
+    filter: drop-shadow(10px 10px 20px rgba(169, 170, 170, 0.44));
+    cursor: pointer;
+}
+.times {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    justify-content: space-around;
+    margin: 0 2rem;
+    margin-top: -1rem;
+    gap: 30px;
+    position: relative;
+    top: -1.5rem;
+    font-size: 15px;
+}
+.times p {
+    font-size: 13px;
+    padding-bottom: 2px;
+}
+
+h5 {
+    color: var(--color-normal);
+    margin-top: -1rem;
+    font-size: 15px;
+}
+.info {
+    width: 297px;
+    height: 141px;
+    position: relative;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 17px;
+    background:var(--back_sh);
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    filter: drop-shadow(1px 1px 1px rgba(41, 44, 58, 0.94));
+}
+.info .time-left {
+    color: #12D4FF;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 80px;
+    height:100px;
+    padding: 9px 25px;
+    background: linear-gradient(0deg, var(--home-bg), var(--home-bg));
+    border-radius: 17px;
+    border: 2px solid var(--color-normal);
+    filter: drop-shadow(0px 1px 10px rgba(18, 212, 255, 0.118));
+}
+.info .time-left h5 {
+    margin-bottom: -20px;
+    margin-top: 1rem;
+    font-size: 30px;
+    font-weight: 800;
+    filter: drop-shadow(1px 1px 3px rgba(169, 170, 170, 0.529));
+}
+.info .time-left p {
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: 500;
+    filter: drop-shadow(1px 1px 3px rgba(169, 170, 170, 0.499));
+}
+.info .Data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info .Data .bg,
+.info .Data .fs {
+    background: var(--home-bg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 59px;
+    width: 136px;
+    margin: 3px 0;
+    justify-content: center;
+    align-items: start;
+    border-radius: 14px;
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.358));
+}
+.info .Data .bg .text,
+.info .Data .fs .text {
+    font-size: 14px;
+    margin-top: -6px;
+    margin-left: 15px;
+}
+.info .Data .bg p,
+.info .Data .fs p {
+    font-size: 11px;
+    margin-top: 11px;
+    margin-left: 15px;
+}
+.settings {
+    position: relative;
+    bottom: -28%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.settings .setting {
+    width: 53px;
+    height: 46px;
+    text-align: center;
+    background:var(--light-bg);
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.367));
+    border-radius: 13px;
+    margin-left: 20px;
+}
+
+.monitor {
+    width: 230px;
+    height: 43px;
+    cursor: pointer;
+    background: var(--color-normal) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    color: #FFFFFF;
+    font-family: "Poppins" , sans-serif;
+    font-size:20PX;
+    font-weight: 700;
+    border: none;
+    border-radius: 13px;
+}
+.monitor img{
+    margin-top: 4px;
+    margin-left: -1.5rem;
+}
+.monitor:hover {
+    background-color: var(--iso);
+}
+
+
+.work ,.home{
+    fill:var(--Fill);
+    stroke:var(--Fill);
+}
+#checkboxOff{
+    margin-left: .7rem;
+    height:63px ;
+}

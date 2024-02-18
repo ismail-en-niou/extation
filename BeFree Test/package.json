@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@types/chrome": "^0.0.258"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}

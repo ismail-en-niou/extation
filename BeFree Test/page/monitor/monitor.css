@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color: #292C3A;
+    /* li ghaytbdlo */
+    --button-color: rgba(41, 44, 58, 1);
+    --color-normal: rgb(18, 212, 255);
+    --Fill: rgba(18, 212, 255, 1);
+    --home-bg: #121525;
+    --light-bg: #292C3A;
+    --back_sh: #191D32;
+    --iso: #11A2C2;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #292C3A;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--home-bg);
+    border-radius: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work {
+    fill: var(--color-normal);
+
+}
+
+.bg {
+
+    stroke: var(--light-bg);
+}
+
+.text1,
+.text2 {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    height: 50px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.nav .logo {
+    width: 102px;
+}
+
+.nav .date {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    color: var(--color-normal);
+    filter: drop-shadow(0px 1px 20px var(--iso));
+    font-size: 20px;
+}
+
+.right-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-logo svg {
+    margin-left: -1.5rem;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    border-radius: 19px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content .you {
+    width: 46%;
+    background-color: var(--light-bg);
+    border-radius: 19px;
+    padding:  .5rem 0;
+}
+
+.content .all {
+    width: 46%;
+    background-color: var(--light-bg);
+    border-radius: 19px;
+    padding:  .5rem 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--home-bg);
+    align-items: center;
+    margin-left: 1rem;
+    width: 95%;
+    height: 67px;
+    margin-bottom: .5rem;
+    border-radius: 25px;
+    font-size: large;
+   
+}
+
+.info .text {
+    display: flex;
+    justify-content: right;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+.info .text div:first-child{
+    margin-right: -9rem;
+    color: var(--color-normal);
+   
+    filter: drop-shadow(1px 1px 20px var(--iso));
+
+}
+.info .text .data{
+    display: flex;
+    align-items: baseline;
+}
+
+.info .text .data svg {
+    position: relative;
+    top: 1rem;
+}
+
+@media (max-width :850px) {
+    div.content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .you {
+        width: 90%;
+    }
+
+    .content .all {
+        display: none;
+    }
+
+    .text1 {
+        font-weight: 700;
+        font-size: large;
+    }
+
+    .text2 {
+        display: none;
+    }
+
+    .nave div.date {
+        display: none;
+    }
+
+    #timeZone,
+    #todayDate,
+    #currentTime {
+        display: none;
+    }
+
+
+}
+
+@media (max-width :440px) {
+    .text1 {
+        font-weight: 700;
+        font-size: large;
+        margin-top: 3rem;
+    }
+
+
+    .content .you {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+}  
+
+    @media (max-width :440px) {
+        .info svg {
+            width: 43px;
+        }
+    }
